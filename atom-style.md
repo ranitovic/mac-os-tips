@@ -2,12 +2,13 @@
 
 #### Backup the original configuration
 All customization can be done in ~/.atom/style.less file, so let's make a copy called ~/.atom/style-original.less
-
+<br /><br />
 
 #### Syntax highlight, how to know which class is displayed
 
 Put cursor in front of the PHP keyword, then Command + Alt + P to view classes,
 use the last class in the style.less to customize the syntax color
+<br /><br />
 
 #### Here is the complete style.less file
 
