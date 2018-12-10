@@ -1,9 +1,9 @@
 # Delete DS store files on Mac OS
 
-#### Permanently disable the creation of DS store files
+#### Permanently disable the creation of DS store files on network drives
 
 ```console
-defaults write com.apple.desktopservices DSDontWriteNetworkStores false
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
 
 #### Delete from the current folder
