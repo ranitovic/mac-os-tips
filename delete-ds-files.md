@@ -10,7 +10,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 ```console
 find . -name .DS_Store -type f -delete && killall Finder
-tert
 ```
 
 #### Delete all
