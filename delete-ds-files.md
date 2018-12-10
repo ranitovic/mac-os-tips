@@ -1,5 +1,18 @@
 # Delete DS store files on Mac OS
 
+#### Permanently disable the creation of DS store files
+
+```console
+defaults write com.apple.desktopservices DSDontWriteNetworkStores false
+```
+
+#### Delete from the current folder
+
+```console
+find . -name .DS_Store -type f -delete && killall Finder
+tert
+```
+
 #### Delete all
 
 ```console
