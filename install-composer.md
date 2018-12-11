@@ -28,7 +28,7 @@ composer -V
 
 #### Change ownership of the ~/.composer directory
 ```console
-sudo chown -R marko:staff ~/.composer
+sudo chown -R <myuser>:staff ~/.composer
 ```
 
 #### Update composer
