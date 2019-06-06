@@ -56,6 +56,8 @@ ServerName localhost
 Include /usr/local/etc/httpd/extra/httpd-vhosts.conf
 ```
 
+#### Configure Apache virtual hosts
+
 ``` console
 sudo nano /usr/local/etc/httpd/extra/httpd-vhosts.conf
 ```
