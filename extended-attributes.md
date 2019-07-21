@@ -4,4 +4,6 @@
 
 #### Remove extended attributes
 
+```console
 xattr -c <filename>
+```
