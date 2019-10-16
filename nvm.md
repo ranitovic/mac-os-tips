@@ -29,7 +29,7 @@ npm uninstall -g a_module
 nvm ls-remote
 ```
 
-#### Shows all locally installed version:
+#### Shows all locally installed versions:
 
 ``` console
 nvm ls
