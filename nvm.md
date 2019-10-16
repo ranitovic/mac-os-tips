@@ -44,7 +44,7 @@ nvm install node
 #### Install a specific version of node.js:
 
 ``` console
-nvm install 8.16.0
+nvm install 8.16.2
 ```
 
 #### Set node.js to the latest version:
@@ -56,7 +56,7 @@ nvm use node
 #### Set node.js to the specific version:
 
 ``` console
-nvm use 8.16.0
+nvm use 8.16.2
 ```
 
 #### Installs the latest version of npm on the current node version:
