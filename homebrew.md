@@ -1,15 +1,41 @@
-# Homebrew installation on Mac OS
+# Homebrew installation on Mac OS Catalina
 
-#### Install Homebrew
+#### Install Homebrew and close terminal
 
 ``` console
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 sudo mkdir /usr/local/log
 sudo mkdir /usr/local/log/php
 sudo chgrp -R staff /usr/local/log/php
 sudo chmod -R ug+w /usr/local/log/php/
 ```
+
+#### Check Homebrew Version (Homebrew 3.3.4) and status
+
+``` console
+brew -v
+brew doctor
+```
+
+#### Install tree with the brew install command (optional)
+
+``` console
+brew install tree
+which tree
+tree --version
+```
+
+#### Start Apache, check http://127.0.0.1/, remove Apache, reboot
+
+``` console
+sudo apachectl start
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+cat /private/var/db/com.apple.xpc.launchd/disabled.plist
+sudo reboot
+```
+
+
 
 #### Install Apache
 
