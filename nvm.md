@@ -3,7 +3,7 @@
 #### Install nvm
 
 ``` console
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 
 Exit the Shell
@@ -41,6 +41,12 @@ nvm ls
 nvm install node
 ```
 
+#### Install LTS version of node.js for a given version:
+
+``` console
+nvm install 16
+```
+
 #### Install a specific version of node.js:
 
 ``` console
@@ -51,6 +57,12 @@ nvm install 8.16.2
 
 ``` console
 nvm use node
+```
+
+#### Set node.js to the specific LTS version:
+
+``` console
+nvm use 16
 ```
 
 #### Set node.js to the specific version:
