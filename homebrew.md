@@ -40,16 +40,7 @@ sudo reboot
 #### Install Apache
 
 ``` console
-sudo mkdir /usr/local/log
-sudo mkdir /usr/local/log/httpd
-sudo chgrp -R staff /usr/local/log/httpd
-sudo chmod -R ug+w /usr/local/log/httpd/
-
-sudo apachectl stop
-sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2&gt;/dev/null
-
 brew install httpd
-
 brew services start httpd
 ```
 
@@ -125,6 +116,29 @@ sudo nano /usr/local/etc/httpd/extra/httpd-vhosts.conf
 brew install php@7.2
 brew services start php@7.2
 ```
+
+PHP 5.6 install message:
+
+To enable PHP in Apache add the following to httpd.conf and restart Apache:
+    LoadModule php5_module /usr/local/opt/php@5.6/lib/httpd/modules/libphp5.so
+
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+
+Finally, check DirectoryIndex includes index.php
+    DirectoryIndex index.php index.html
+
+The php.ini and php-fpm.ini file can be found in:
+    /usr/local/etc/php/5.6/
+
+php@5.6 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have php@5.6 first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/php@5.6/bin:$PATH"' >> /Users/marko/.bash_profile
+  echo 'export PATH="/usr/local/opt/php@5.6/sbin:$PATH"' >> /Users/marko/.bash_profile
+  
 
 Location of php.ini:
 /usr/local/etc/php/7.2/php.ini
