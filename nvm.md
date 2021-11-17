@@ -76,3 +76,9 @@ nvm use 8.16.2
 ``` console
 nvm install-latest-npm
 ```
+
+#### Set node.js version inside a project's root folder:
+
+``` console
+echo "16" > .nvmrc
+```
