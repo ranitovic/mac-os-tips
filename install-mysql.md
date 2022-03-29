@@ -28,3 +28,8 @@ mysql -u root -p
 ``` sql
 ALTER USER `root`@`localhost` IDENTIFIED BY '', `root`@`localhost` PASSWORD EXPIRE NEVER;
 ```
+
+#### Location of data files to be used for backup and restore
+``` sql
+SELECT @@datadir, @@innodb_data_home_dir;
+```
