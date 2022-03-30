@@ -217,4 +217,131 @@ atom-text-editor.editor
         color: #FFFFFF;
     }
 }
+
+// Java Syntax Highlighting
+atom-text-editor.editor
+{
+    // java source code
+    .syntax--source.syntax--java {
+        color: #FFFFFF;
+
+        // keywords
+        .syntax--keyword.syntax--other.syntax--class {
+            color: #e2b9ee;
+        }
+
+        .syntax--meta.syntax--package {
+            .syntax--keyword.syntax--other.syntax--package {
+                color: #e2b9ee;
+            }
+        }
+
+        // import packages
+        .syntax--meta.syntax--import {
+            color: #d4d383;
+            .syntax--keyword.syntax--other.syntax--import {
+                color: #e2b9ee;
+            }
+        }
+
+        // storage modifier (public / private)
+        .syntax--storage.syntax--modifier {
+            color: #e2b9ee;
+        }
+
+        // meta.class.body
+        .syntax--meta.syntax--class.syntax--body {
+            color: #ecebbf;
+
+            // numeric constant
+            .syntax--constant.syntax--numeric {
+                color: #ddb74f;
+            }
+
+            .syntax--storage.syntax--type {
+                // color: #ddb74f;
+                color: #a3d8ac;
+            }
+
+            // meta.constructor
+            .syntax--meta.syntax--constructor {
+                .syntax--entity.syntax--name.syntax--function {
+                    color: #ecebbf;
+                }
+
+                .syntax--meta.syntax--constructor.syntax--body {
+                    .syntax--variable.syntax--language {
+                        color: #dfdc12;
+                    }
+                }
+            }
+
+            // meta.method
+            .syntax--meta.syntax--method {
+                color: #ecebbf;
+
+                .syntax--entity.syntax--name.syntax--function {
+                    color: #ecebbf;
+                }
+
+                // meta.method.body
+                .syntax--meta.syntax--method.syntax--body {
+                    color: #ecebbf;
+
+                    // functions
+                    .syntax--entity.syntax--name.syntax--function {
+                        color: #ecebbf;
+                    }
+
+                    // control keywords
+                    .syntax--keyword.syntax--control {
+                        color: #dfdc12;
+                    }
+
+                    // numeric constant
+                    .syntax--constant.syntax--numeric {
+                        color: #ddb74f;
+                    }
+
+                    // boolean constant (true, false)
+                    .syntax--constant.syntax--boolean {
+                        color: #ddb74f;
+                    }
+
+                    // null constant
+                    .syntax--constant.syntax--language.syntax--null {
+                        color: #ddb74f;
+                    }
+
+                    // double quoted string
+                    .syntax--string.syntax--quoted.syntax--double {
+                        color: #3cd5e0;
+                    }
+                }
+            }
+        }
+
+        // comment.block
+        .syntax--comment.syntax--block {
+            color: #aaaaaa;
+        }
+
+        // entity.name.type.class
+        .syntax--entity.syntax--name.syntax--type.syntax--class {
+            color: #dfdc12;
+        }
+
+        // storage.type
+        .syntax--storage.syntax--type {
+            color: #dfdc12;
+        }
+
+        // meta.declaration.annotation
+        .syntax--meta.syntax--declaration.syntax--annotation {
+            .syntax--string.syntax--quoted.syntax--double {
+                color: #3cd5e0;
+            }
+        }
+    }
+}
 ```
