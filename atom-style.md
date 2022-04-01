@@ -108,7 +108,7 @@ atom-text-editor.editor
     // CSS names and tags
     .syntax--entity.syntax--name.syntax--css,
     .syntax--support.syntax--function.syntax--css {
-        color: #e2b9ee;
+        color: #d4a5e3;
     }
 
     // CSS attributes
@@ -124,12 +124,12 @@ atom-text-editor.editor
     // CSS constants
     .syntax--constant.syntax--css,
     .syntax--support.syntax--constant.syntax--css {
-        color: #98e888;
+        color: #FF0000;
     }
 
     // CSS keywords
     .syntax--keyword.syntax--css {
-        color: #e2b9ee;
+        color: #d4a5e3;
     }
 
     // LESS variables
@@ -178,7 +178,7 @@ atom-text-editor.editor
     .syntax--storage.syntax--modifier.syntax--php,
     .syntax--constant.syntax--language.syntax--php,
     .syntax--support.syntax--php {
-        color: #e2b9ee;
+        color: #d4a5e3;
     }
 
     // PHP constants
@@ -194,7 +194,7 @@ atom-text-editor.editor
 
     // PHP numbers
     .syntax--constant.syntax--numeric.syntax--php {
-        color: #98e888;
+        color: #FF0000;
     }
 
     // PHP classes
@@ -227,26 +227,26 @@ atom-text-editor.editor
 
         // keywords
         .syntax--keyword.syntax--other.syntax--class {
-            color: #e2b9ee;
+            color: #d4a5e3;
         }
 
         .syntax--meta.syntax--package {
             .syntax--keyword.syntax--other.syntax--package {
-                color: #e2b9ee;
+                color: #d4a5e3;
             }
         }
 
         // import packages
         .syntax--meta.syntax--import {
-            color: #d4d383;
+            color: #dddddd;
             .syntax--keyword.syntax--other.syntax--import {
-                color: #e2b9ee;
+                color: #d4a5e3;
             }
         }
 
         // storage modifier (public / private)
         .syntax--storage.syntax--modifier {
-            color: #e2b9ee;
+            color: #d4a5e3;
         }
 
         // meta.class.body
@@ -315,7 +315,7 @@ atom-text-editor.editor
 
                     // double quoted string
                     .syntax--string.syntax--quoted.syntax--double {
-                        color: #3cd5e0;
+                        color: #75c9d6;
                     }
                 }
             }
@@ -339,8 +339,610 @@ atom-text-editor.editor
         // meta.declaration.annotation
         .syntax--meta.syntax--declaration.syntax--annotation {
             .syntax--string.syntax--quoted.syntax--double {
-                color: #3cd5e0;
+                color: #75c9d6;
             }
+        }
+    }
+}
+
+// JSP Syntax Highlighting
+atom-text-editor.editor
+{
+    // text.html.jsp
+    .syntax--text.syntax--html.syntax--jsp {
+        color: #FFFFFF;
+
+        // meta.tag.template.include.jsp
+        .syntax--meta.syntax--tag.syntax--template.syntax--include.syntax--jsp {
+
+            // keyword.control.include.jsp
+            .syntax--keyword.syntax--control.syntax--include {
+                color: #d6d458;
+            }
+
+            // string.quoted.double.jsp
+            .syntax--string.syntax--quoted.syntax--double.syntax--jsp {
+                color: #75c9d6;
+            }
+
+            // entity.other.attribute-name.jsp
+            .syntax--entity.syntax--other.syntax--attribute-name.syntax--jsp {
+                color: #d6d458;
+            }
+
+        }
+
+        // meta.tag.block.h1.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--h1.syntax--html {
+
+            // entity.name.tag.block.h1.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--h1.syntax--html {
+                color: #78c069;
+            }
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+        }
+
+        // meta.tag.block.h2.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--h2.syntax--html {
+
+            // entity.name.tag.block.h2.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--h2.syntax--html {
+                color: #78c069;
+            }
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+        }
+
+        // meta.tag.block.h3.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--h3.syntax--html {
+
+            // entity.name.tag.block.h3.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--h3.syntax--html {
+                color: #78c069;
+            }
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+        }
+
+        // meta.tag.block.h4.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--h4.syntax--html {
+
+            // entity.name.tag.block.h4.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--h4.syntax--html {
+                color: #78c069;
+            }
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+        }
+
+        // meta.tag.block.h5.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--h5.syntax--html {
+
+            // entity.name.tag.block.h5.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--h5.syntax--html {
+                color: #78c069;
+            }
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+        }
+
+        // meta.tag.block.h6.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--h6.syntax--html {
+
+            // entity.name.tag.block.h6.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--h6.syntax--html {
+                color: #78c069;
+            }
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+        }
+
+        // meta.tag.block.div.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--div.syntax--html {
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+
+            // entity.name.tag.block.div.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--div.syntax--html {
+                color: #d6d458;
+            }
+        }
+
+        // meta.tag.block.ul.html
+        .syntax--meta.syntax--tag.syntax--block.syntax--ul.syntax--html {
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+
+            // entity.name.tag.block.ul.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--block.syntax--ul.syntax--html {
+                color: #78c069;
+            }
+        }
+
+        // meta.tag.inline.a.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--a.syntax--html {
+            // entity.name.tag.inline.a.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--a.syntax--html {
+                color: #78c069;
+            }
+            // string.quoted.double.html
+            .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                color: #75c9d6;
+            }
+
+            // meta.attribute-with-value.html
+            .syntax--meta.syntax--attribute-with-value.syntax--html {
+                // entity.other.attribute-name.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+                    color: #78c069;
+                }
+            }
+
+            // meta.attribute-with-value.class
+            .syntax--meta.syntax--attribute-with-value.syntax--class {
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+            }
+        }
+
+        // meta.tag.inline.b.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--b.syntax--html {
+            // entity.name.tag.inline.b.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--b.syntax--html {
+                color: #78c069;
+            }
+
+            // entity.other.attribute-name.class.html
+            .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                color: #d4a5e3;
+            }
+
+            // string.quoted.double.html
+            .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                color: #75c9d6;
+            }
+        }
+
+        // meta.tag.inline.i.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--i.syntax--html {
+            // entity.name.tag.inline.i.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--i.syntax--html {
+                color: #78c069;
+            }
+
+            // entity.other.attribute-name.class.html
+            .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                color: #d4a5e3;
+            }
+
+            // string.quoted.double.html
+            .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                color: #75c9d6;
+            }
+        }
+
+        // meta.tag.inline.img.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--img.syntax--html {
+            // entity.name.tag.inline.img.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--img.syntax--html {
+                color: #78c069;
+            }
+
+            // entity.other.attribute-name.class.html
+            .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                color: #d4a5e3;
+            }
+
+            // string.quoted.double.html
+            .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                color: #75c9d6;
+            }
+        }
+
+        // meta.tag.inline.li.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--li.syntax--html {
+            // entity.name.tag.inline.li.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--li.syntax--html {
+                color: #78c069;
+            }
+
+            // entity.other.attribute-name.class.html
+            .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                color: #d4a5e3;
+            }
+
+            // string.quoted.double.html
+            .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                color: #75c9d6;
+            }
+        }
+
+        // meta.tag.inline.option.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--option.syntax--html {
+            // entity.name.tag.inline.option.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--option.syntax--html {
+                color: #78c069;
+            }
+
+            // string.quoted.single.html
+            .syntax--string.syntax--quoted.syntax--single.syntax--html {
+                color: #75c9d6;
+            }
+
+            // meta.attribute-with-value.html
+            .syntax--meta.syntax--attribute-with-value.syntax--html {
+                color: #FFFFFF;
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+
+                // punctuation.separator.key-value.html
+                .syntax--punctuation.syntax--separator.syntax--key-value.syntax--html {
+                    color: #FFFFFF;
+                }
+
+            }
+
+            // entity.other.attribute-name.html
+            .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+                color: #78c069;
+            }
+        }
+
+        // meta.tag.inline.select.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--select.syntax--html {
+            // entity.name.tag.inline.select.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--select.syntax--html {
+                color: #78c069;
+            }
+
+            // meta.attribute-with-value.class.html
+            .syntax--meta.syntax--attribute-with-value.syntax--class.syntax--html {
+
+                // entity.other.attribute-name.class.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                    color: #d4a5e3;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+            }
+
+            // meta.attribute-with-value.id.html
+            .syntax--meta.syntax--attribute-with-value.syntax--id.syntax--html {
+                // entity.other.attribute-name.id.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--html {
+                    color: #78c069;
+                }
+
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        // meta.tag.inline.span.html
+        .syntax--meta.syntax--tag.syntax--inline.syntax--span.syntax--html {
+            // entity.name.tag.inline.span.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--inline.syntax--span.syntax--html {
+                color: #78c069;
+            }
+
+            // entity.other.attribute-name.class.html
+            .syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--html {
+                color: #d4a5e3;
+            }
+
+            // string.quoted.double.html
+            .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                color: #75c9d6;
+            }
+        }
+
+        // meta.embedded.line.el_expression.jsp
+        .syntax--meta.syntax--embedded.syntax--line.syntax--el_expression.syntax--jsp {
+            // punctuation.section.embedded.begin.jsp
+            .syntax--punctuation.syntax--section.syntax--embedded.syntax--begin {
+                color: #e68f48;
+            }
+
+            // punctuation.section.embedded.end.jsp
+            .syntax--punctuation.syntax--section.syntax--embedded.syntax--end {
+                // source.java
+                .syntax--source.syntax--java {
+                    color: #dba36f;
+                }
+            }
+
+            // source.java
+            .syntax--source.syntax--java {
+                // string.quoted.single.java.el
+                .syntax--string.syntax--quoted.syntax--single.syntax--java.syntax--el {
+                    color: #75c9d6;
+                }
+
+                // constant.numeric.java.el
+                .syntax--constant.syntax--numeric.syntax--java.syntax--el {
+                    color: #eebebe;
+                }
+
+                // keyword.control.ternary.java.el
+                .syntax--keyword.syntax--control.syntax--ternary.syntax--java.syntax--el {
+                    color: #78c069;
+                }
+            }
+        }
+
+        // meta.tag.other.html
+        .syntax--meta.syntax--tag.syntax--other.syntax--html {
+            color: #dba36f;
+
+            // entity.name.tag.other.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--other.syntax--html {
+                color: #dba36f;
+            }
+
+            // meta.attribute-with-value.html
+            .syntax--meta.syntax--attribute-with-value.syntax--html {
+                // string.quoted.double.html
+                .syntax--string.syntax--quoted.syntax--double.syntax--html {
+                    color: #75c9d6;
+                }
+
+                // entity.other.attribute-name.html
+                .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+                    color: #dba36f;
+                }
+            }
+        }
+
+        // meta.tag.script.html
+        .syntax--meta.syntax--tag.syntax--script.syntax--html {
+            color: #FFFFFF;
+
+            // entity.name.tag.script.html
+            .syntax--entity.syntax--name.syntax--tag.syntax--script.syntax--html {
+                color: #dba36f;
+            }
+
+            // source.js.embedded.html
+            .syntax--source.syntax--js.syntax--embedded.syntax--html {
+
+                // meta.function-call.js
+                .syntax--meta.syntax--function-call.syntax--js {
+
+                    // entity.name.function.js
+                    .syntax--entity.syntax--name.syntax--function.syntax--js {
+                        color: #d6d458;
+                    }
+
+                    // meta.arguments.js
+                    .syntax--meta.syntax--arguments.syntax--js {
+
+                        // string.quoted.double.js
+                        .syntax--string.syntax--quoted.syntax--double.syntax--js {
+                            color: #75c9d6;
+                        }
+
+                        // string.quoted.single.js
+                        .syntax--string.syntax--quoted.syntax--single.syntax--js {
+                            color: #75c9d6;
+                        }
+
+                        // meta.function.js
+                        .syntax--meta.syntax--function.syntax--js {
+                            // storage.type.function.js
+                            .syntax--storage.syntax--type.syntax--function.syntax--js {
+                                color: #d4a5e3;
+                            }
+                        }
+
+                        // keyword.control.js
+                        .syntax--keyword.syntax--control.syntax--js {
+                            color: #d4a5e3;
+                        }
+                    }
+                }
+
+                // meta.method-call.js
+                .syntax--meta.syntax--method-call.syntax--js {
+
+                    // meta.arguments.js
+                    .syntax--meta.syntax--arguments.syntax--js {
+
+                        // keyword.control.js
+                        .syntax--keyword.syntax--control.syntax--js {
+                            color: #d4a5e3;
+                        }
+
+                        // variable.language.js
+                        .syntax--variable.syntax--language.syntax--js {
+                            color: #d6d458;
+                        }
+
+                        // support.variable.dom.js
+                        .syntax--support.syntax--variable.syntax--dom.syntax--js {
+                            color: #d6d458;
+                        }
+
+                        // support.variable.property.dom.js
+                        .syntax--support.syntax--variable.syntax--property.syntax--dom.syntax--js {
+                            color: #d6d458;
+                        }
+
+                        // constant.numeric.decimal.js
+                        .syntax--constant.syntax--numeric.syntax--decimal.syntax--js {
+                            color: #eebebe;
+                        }
+
+                        // meta.brace.curly.js
+                        .syntax--meta.syntax--brace.syntax--curly.syntax--js {
+                            color: #FFFFFF;
+                        }
+
+                        // meta.brace.round.js
+                        .syntax--meta.syntax--brace.syntax--round.syntax--js {
+                            color: #FFFFFF;
+                        }
+
+                        // string.quoted.double.js
+                        .syntax--string.syntax--quoted.syntax--double.syntax--js {
+                            color: #75c9d6;
+
+                            // meta.embedded.line.el_expression.jsp
+                            .syntax--meta.syntax--embedded.syntax--line.syntax--el_expression.syntax--jsp {
+                                // source.java
+                                .syntax--source.syntax--java {
+                                    color: #FFFFFF;
+
+                                    // keyword.control.ternary.java.el
+                                    .syntax--keyword.syntax--control.syntax--ternary.syntax--java.syntax--el {
+                                        color: #d6d458;
+                                    }
+                                }
+
+                                // punctuation.section.embedded.begin.jsp
+                                .syntax--punctuation.syntax--section.syntax--embedded.syntax--begin.syntax--jsp {
+                                    color: #dba36f;
+                                }
+
+                            }
+                        }
+
+                        // string.quoted.single.js
+                        .syntax--string.syntax--quoted.syntax--single.syntax--js {
+                            color: #75c9d6;
+                        }
+
+                        // meta.function.js
+                        .syntax--meta.syntax--function.syntax--js {
+                            // storage.type.function.js
+                            .syntax--storage.syntax--type.syntax--function.syntax--js {
+                                color: #d4a5e3;
+                            }
+                        }
+
+                        // support.function.js
+                        .syntax--support.syntax--function.syntax--js {
+                            color: #d4a5e3;
+                        }
+                    }
+
+                    // entity.name.function.js
+                    .syntax--entity.syntax--name.syntax--function.syntax--js {
+                        color: #d4a5e3;
+                    }
+                }
+            }
+        }
+
+        // comment.block.html
+        .syntax--comment.syntax--block.syntax--html {
+            color: #aaaaaa;
         }
     }
 }
